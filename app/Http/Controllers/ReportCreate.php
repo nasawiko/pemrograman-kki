@@ -19,6 +19,7 @@ class ReportCreate extends Controller
         $ValidatedData['excerpt'] = Str::limit(strip_tags($request->deskripsi), 100);
 
         Report::create($ValidatedData);
-        return Redirect('/dashboard/report')->with('success', 'Tugas Telah Dikirim!');
+        return Redirect('success');
+        // ->with('success', 'Tugas Telah Dikirim!');
     }
 }

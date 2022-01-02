@@ -129,6 +129,7 @@ class DashboardPostsController extends Controller
      */
     public function destroy(Posts $post)
     {
+       
         Posts::destroy($post->id);
         return Redirect('/dashboard/posts')->with('oke', 'Tugas Selesai/Dihapus!');
     }

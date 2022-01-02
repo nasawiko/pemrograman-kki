@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Report;
+use App\Models\Posts;
 use Illuminate\Http\Request;
 
 class DashboardReportController extends Controller
@@ -15,7 +16,8 @@ class DashboardReportController extends Controller
     public function index()
     {
         return view('dashboard.report.index', [
-            'report' => Report::where('user_id', auth()->user()->id)->get()
+            'report' => Report::where('user_id', auth()->user()->id)->get(),
+            'posts' => Posts::get()
         ]);
     }
 

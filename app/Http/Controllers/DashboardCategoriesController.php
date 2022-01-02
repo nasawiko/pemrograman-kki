@@ -108,6 +108,7 @@ class DashboardCategoriesController extends Controller
         // $category->posts()->delete();
         // $category = category::all();
         // $category->posts()->where('category_id', $category->id)->delete();
+      
         Categories::destroy($category->id);
         return Redirect('/dashboard/categories')->with('oke', 'Tugas Selesai/Dihapus!');
     }

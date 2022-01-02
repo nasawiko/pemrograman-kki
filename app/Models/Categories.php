@@ -18,7 +18,7 @@ class Categories extends Model
 
     public function report()
     {
-        return $this->hasMany(Report::class);
+        return $this->hasMany(Reports::class);
     }
     // public static function boot() {
     //     parent::boot();

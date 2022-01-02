@@ -41,7 +41,7 @@
      <div class="col-md-4">
       <div class="card">
         <div class="position-absolute" style="background-color: rgba(0, 0, 0, 0.6")><a class="text-white text-decoration-none" href="/categories/{{ $post->categories->slug }}">{{ $post->categories->name }}</a></div>
-        <img src="https://source.unsplash.com/500x400?{{ $post->categories->img_category }}" class="card-img-top" alt="{{ $post->categories->img_category }}">
+        <img src="https://source.unsplash.com/500x400?{{ $post->categories->img_category ?? 'none'}}" class="card-img-top" alt="{{ $post->categories->img_category }}">
         <div class="card-body">
           <h5 class="card-title"><a class="text-decoration-none text-dark" href="/posts/{{ $post->slug }}">{{ $post->title }}</a></h5>
           <p class="card-text">Author : <a class="text-decoration-none" href="/authors/{{ $post->user->username}}">{{ $post->user->name }}  </a></p>

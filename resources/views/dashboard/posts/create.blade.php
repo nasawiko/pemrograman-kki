@@ -11,6 +11,7 @@
   <div class="row">
     <div class="col-lg-8">
       <form method="post" action="/dashboard/posts">
+      
         @csrf
         <div class="mb-3">
           <label for="title" class="form-label">title</label>

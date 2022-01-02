@@ -55,7 +55,7 @@ class Posts extends Model
 
     public function report()
     {
-        return $this->belongsTo(Report::class);
+        return $this->belongsTo(Reports::class);
     }
 
     public function user()

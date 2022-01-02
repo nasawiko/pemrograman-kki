@@ -32,7 +32,7 @@
           <td>{{ $loop->iteration }}</td>
           <td>{{ $post->title }}</td>
           <td>{{ $post->categories->name }}</td>
-          <td>{{ $post->$posts->title }}</td>
+          <td>{{ $post->$posts->title ?? 'none'}}</td>
           <td>
               <a href="/dashboard/posts/{{ $post->slug }}" class="badge bg-success"> <span data-feather="book-open"></span></a>
               <a href="#" class="badge bg-warning"> <span data-feather="edit"></span></a>

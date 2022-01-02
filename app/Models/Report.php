@@ -8,7 +8,7 @@ use App\Models\Categories;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Report extends Model
+class Reports extends Model
 {
     use HasFactory;
     protected $guarded = ['id'];
